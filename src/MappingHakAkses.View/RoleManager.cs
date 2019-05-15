@@ -771,13 +771,14 @@ namespace MappingHakAkses.View
                {
                   if (button.TagIgnore()) continue;
 
-                  // True jika button tag/text ditemukan pada list action,
+                  // Cek berdasarkan Tag
+                  // True jika button tag ditemukan pada list action,
                   // sebaliknya false jika tidak ditemukan
                   button.Enabled = actionButtons.Any(a => a.Equals(button.Tag.ToString()));
                }
                else
                {
-                  // Cek berdasarkan button text
+                  // Cek berdasarkan Button text
                   button.Enabled = actionButtons.Any(a => a.Equals(button.Text));
                }
             }

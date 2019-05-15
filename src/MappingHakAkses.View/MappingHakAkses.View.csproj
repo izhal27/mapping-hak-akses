@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BECD8963-E004-4CDE-845E-C2E7F5FCAEE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MappingHakAkses.View</RootNamespace>
+    <AssemblyName>MappingHakAkses</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Equin.ApplicationFramework.BindingListView, Version=1.4.5222.35545, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Equin.ApplicationFramework.BindingListView.1.4.5222.35545\lib\net40-Client\Equin.ApplicationFramework.BindingListView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBaseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseEntry.Designer.cs">
+      <DependentUpon>FrmBaseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryHakAkses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntryHakAkses.Designer.cs">
+      <DependentUpon>FrmEntryHakAkses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntryOperator.Designer.cs">
+      <DependentUpon>FrmEntryOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubMenu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubMenu3.designer.cs">
+      <DependentUpon>FrmSubMenu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubMenu2.designer.cs">
+      <DependentUpon>FrmSubMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubMenu4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubMenu4.designer.cs">
+      <DependentUpon>FrmSubMenu4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Extension.cs" />
+    <Compile Include="FrmHakAkses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHakAkses.Designer.cs">
+      <DependentUpon>FrmHakAkses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperator.Designer.cs">
+      <DependentUpon>FrmOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\IListener.cs" />
+    <Compile Include="Helper\Utilities.cs" />
+    <Compile Include="MainProgram.cs" />
+    <Compile Include="Helper\MessagesHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleManager.cs" />
+    <Compile Include="FrmSubMenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubMenu1.Designer.cs">
+      <DependentUpon>FrmSubMenu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\WaitCursorHandler.cs" />
+    <EmbeddedResource Include="FrmBaseEntry.resx">
+      <DependentUpon>FrmBaseEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntryHakAkses.resx">
+      <DependentUpon>FrmEntryHakAkses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntryOperator.resx">
+      <DependentUpon>FrmEntryOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubMenu3.resx">
+      <DependentUpon>FrmSubMenu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubMenu2.resx">
+      <DependentUpon>FrmSubMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHakAkses.resx">
+      <DependentUpon>FrmHakAkses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperator.resx">
+      <DependentUpon>FrmOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubMenu4.resx">
+      <DependentUpon>FrmSubMenu4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FrmSubMenu1.resx">
+      <DependentUpon>FrmSubMenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MappingHakAkses.Controller\MappingHakAkses.Controller.csproj">
+      <Project>{c12e096e-6c06-424b-a77c-7cd8b2d65a97}</Project>
+      <Name>MappingHakAkses.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MappingHakAkses.Model\MappingHakAkses.Model.csproj">
+      <Project>{815ad305-301d-4de7-9f17-d157e7f33687}</Project>
+      <Name>MappingHakAkses.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

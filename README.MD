@@ -1,6 +1,14 @@
+![GitHub](https://img.shields.io/github/license/izhal27/mapping-hak-akses)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/izhal27/mapping-hak-akses)
+![GitHub Release Date](https://img.shields.io/github/release-date/izhal27/mapping-hak-akses)
+![GitHub All Releases](https://img.shields.io/github/downloads/izhal27/mapping-hak-akses/total)
+![GitHub top language](https://img.shields.io/github/languages/top/izhal27/mapping-hak-akses)
+![GitHub last commit](https://img.shields.io/github/last-commit/izhal27/mapping-hak-akses)
+![GitHub repo size](https://img.shields.io/github/repo-size/izhal27/mapping-hak-akses)
+
 # Mapping Hak akses
 
-Mapping Hak akses user padad control Button, MenuStrip dan ToolStrip WinForms.
+Mapping Hak akses user pada control Button, MenuStrip dan ToolStrip WinForms.
 
 ## Getting Started
 
